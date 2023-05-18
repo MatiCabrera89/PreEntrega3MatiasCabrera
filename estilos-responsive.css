@@ -1,0 +1,131 @@
+/* Estilos base */
+/* ... */
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 992px) {
+
+    /* Modificar estilos para pantallas grandes */
+    .navbar-brand {
+        font-size: 2.5rem;
+    }
+
+    .fa-ice-cream {
+        font-size: 2rem;
+    }
+
+    .navbar-nav {
+        margin-left: auto;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .introduccion {
+        flex: 0 0 60%;
+        max-width: 60%;
+        margin-right: 2rem;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (max-width: 991px) {
+
+    /* Modificar estilos para pantallas medianas */
+    .navbar-brand {
+        font-size: 2rem;
+    }
+
+    .fa-ice-cream {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .introduccion {
+        flex: 0 0 80%;
+        max-width: 80%;
+        margin-right: 1rem;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+
+    /* Modificar estilos para pantallas pequeñas */
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .fa-ice-cream {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .introduccion {
+        flex: 1;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .navbar-collapse.show .navbar-nav {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .fa-solid.fa-ice-cream {
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .nav-item {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .introduccion {
+        font-size: 0.9rem;
+    }
+
+    #foto img {
+        width: 100%;
+        height: auto;
+    }
+}
