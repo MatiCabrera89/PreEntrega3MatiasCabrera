@@ -29,8 +29,7 @@ header {
 .navbar {
     display: flex !important;
     background-color: $color2;
-    text-align: center !important;
-    font-size: 30px;
+    font-size: 20px;
     color: $color1;
 }
 
@@ -67,29 +66,48 @@ main {
     padding: 20px;
     position: absolute;
     top: 50%;
-    a{
+}
+
+.introduccion a{
+    color: $color1;
+    text-align: center;
+    background-color: $color2;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border: 2px solid $color1;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    // display: flex;
+    // justify-content: center;
+    width: 150px;
+    &:hover {
+        background-color: $color3;
+    }
+}
+
+.card-deck {
+    width: 50% !important;
+    height: 200px !important;
+    text-align: center;
+    position: absolute;
+    top: 130%;
+
+    .card {
+        background-color: #333;
+        font-size: 15px;
         color: $color1;
-        text-align: center;
-        background-color: $color2;
-        text-decoration: none;
-        padding: 10px 20px;
-        text-transform: capitalize;
-        border: 2px solid $color1;
-        border-radius: 5px;
+    }
+
+    .card-title {
         font-size: 20px;
-        font-weight: bold;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        // transition: all .3s;
-        display: flex;
-        justify-content: center;
-        // height: px;
-        width: 150px;
 
-        
-        &:hover{
-            background-color: $color3;
-        }
+    }
 
+    .card-text {
+        font-size: 13px !important;
     }
 }
 
@@ -262,20 +280,69 @@ form #enviar {
     background-color: $color2;
 }
 
+
+
 footer {
     background-color: $color2;
-    text-align: center;
     padding: 20px;
-    font-size: 20px;
+    text-align: center;
     color: $color1;
+    font-size: 20px;
+
+    .linkredes a {
+        color: $color1;
+        letter-spacing: 20px;
+        font-size: 40px;
+        text-decoration: none;
+    }
+
+    .logofooter {
+        position: absolute;
+        top: 1800px;
+        margin-right: 8%;
+        right: 0;
+        font-size: 100px;
+        a{
+            color: $color1;
+        }
+    }
+
+
+    .mapasitio {
+        width: 100%;
+        text-align: left;
+        color: $color1;
+        font-size: 20px;
+        display: flex;
+
+        li {
+            list-style: none;
+            color: $color1;
+            font-size: 20px;
+            height: 20px;
+            width: 40%;
+            padding: 13px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: $color1;
+
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+    }
 }
 
-.linkredes a {
-    color: $color1;
-    letter-spacing: 20px;
-    font-size: 40px;
-    text-decoration: none;
-}
+
+
+
+
 
 .ubicacion {
     text-align: center;
